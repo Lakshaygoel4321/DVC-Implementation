@@ -7,6 +7,10 @@ df = pd.DataFrame({
     "age":[23,22,22]
 })
 
+new_gf1 = {"Name":"GF","city":"city2","age":22}
+df.iloc[len(df.index)] = new_gf1
+
+
 dir_data = "data"
 
 os.makedirs(dir_data,exist_ok=True)
